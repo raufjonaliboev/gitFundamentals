@@ -11,7 +11,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/", () => Console.Writeline("Demo app for git fundamentals practice!") );
+app.MapGet("/", () => Console.Writeline("Demo app for git fundamentals practice!"));
+app.MapGet("/admin", () => Console.Writeline("This is Admin Page"));
 
 app.Run();
 
