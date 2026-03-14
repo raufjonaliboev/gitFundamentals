@@ -17,6 +17,7 @@ app.UseHttpsRedirection();
 
 app.MapGet("/", () => Console.Writeline("Demo app for git fundamentals practice!"));
 app.MapGet("/admin", () => Console.Writeline("This is Admin Page"));
+app.MapGet("/cart", () => Console.Writeline("Cart Page which added from another dev!"));
 
 app.Run();
 
